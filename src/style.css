@@ -64,6 +64,7 @@ border:transparent;
 
  .cloud {
      font-size: 70px;
+    
  }
 
  .container {
@@ -116,6 +117,15 @@ border:transparent;
 
  .emoji {
      font-size: 40px;
+     
+ }
+
+ .description {
+    font-weight: 400;
+    
+    margin-top: 20px;
+
+    
  }
 
  .humidity {
