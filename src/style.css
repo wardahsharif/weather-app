@@ -81,7 +81,7 @@ border:transparent;
     border: solid rgb(212, 169, 224);
      border-width: 10px;
      background-color: transparent;
-    backdrop-filter: blur(35px); 
+    backdrop-filter: blur(40px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
