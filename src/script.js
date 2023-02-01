@@ -2,7 +2,7 @@ let date = new Date();
 
 let h3 = document.querySelector("h3");
 
-let currentHours = date.getHours();
+let currentHour = date.getHours();
 let currentMinutes = date.getMinutes();
 let currentDays = [
   "Sunday",
@@ -15,7 +15,7 @@ let currentDays = [
 ];
 let currentDay = currentDays[date.getDay()];
 
-h3.innerHTML = `${currentDay} <br/> ${currentHours}:${currentMinutes}`;
+h3.innerHTML = `${currentDay} <br/> ${currentHour}:${currentMinutes}`;
 
 function celsiusTemperature(event) {
   event.preventDefault();
