@@ -1,4 +1,4 @@
- .background {
+ #myVideo {
      position: fixed;
      right: 0;
      bottom: 0;
@@ -30,12 +30,31 @@
      border: transparent;
      padding-bottom: 5px;
      cursor: pointer;
-     box-shadow: 2px 2px 5px lightgrey;
+     box-shadow: 2px 2px 5px rgb(181, 136, 192);
+    background-color: transparent;
+     
 
  }
 
+
+ 
  button:hover {
-     color: grey;
+     color: lavender;
+ }
+
+ #search-input {
+    background-color: rgb(239, 230, 243);
+   border: transparent;
+   
+ }
+
+ #search {
+background-color: rgb(173, 141, 173);
+border:transparent;
+ }
+
+ #search:hover {
+    color: lavender;
  }
 
  .currently {
@@ -49,8 +68,8 @@
 
  .container {
      max-width: 800px;
-     margin-top: 50px;
-     margin-bottom: 50px;
+     margin-top: 100px;
+    
      
      
 
@@ -59,7 +78,8 @@
  .card-1 {
     border: solid rgb(212, 169, 224);
      border-width: 10px;
-    
+     background-color: transparent;
+    backdrop-filter: blur(30px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
@@ -68,7 +88,9 @@
      display: block;
      margin: 0 auto;
      margin-top: 10px;
-     border: solid rgb(212, 169, 224);
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: solid rgb(212, 169, 224);
     
      
  }
@@ -89,6 +111,7 @@
  .weekdays {
      margin-top: 30px;
      margin-bottom: 40px;
+   
  }
 
  .emoji {
@@ -106,25 +129,37 @@
  .friday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
+    background-color: transparent;
+        backdrop-filter: blur(30px);
 
  }
 
  .saturday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
+    background-color: transparent;
+        backdrop-filter: blur(30px);
  }
 
  .sunday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
+    background-color: transparent;
+        backdrop-filter: blur(30px);
  }
 
  .monday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
+    background-color: transparent;
+        backdrop-filter: blur(30px);
  }
 
  .tuesday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
+    background-color: transparent;
+        backdrop-filter: blur(30px);
  }
+
+ 
