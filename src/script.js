@@ -41,6 +41,9 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("h2");
   temperatureElement.innerHTML = `${temperature}℃`;
+  let description = document.querySelector(".description");
+  description.innerHTML = response.data.weather[0].description.toUpperCase();
+   
 }
 
 function cityUrl(event) {
@@ -78,3 +81,4 @@ function getCurrent(event) {
 
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrent);
+
