@@ -9,9 +9,10 @@
 
  h1 {
      text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
      font-size: 40px;
-
+ font-family: 'Bodoni Moda', serif;
+ margin-top: 20px;
  }
 
  h2 {
@@ -80,7 +81,7 @@ border:transparent;
     border: solid rgb(212, 169, 224);
      border-width: 10px;
      background-color: transparent;
-    backdrop-filter: blur(30px); 
+    backdrop-filter: blur(35px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
@@ -90,7 +91,7 @@ border:transparent;
      margin: 0 auto;
      margin-top: 10px;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(35px);
     border: solid rgb(212, 169, 224);
     
      
@@ -140,7 +141,7 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(35px);
 
  }
 
@@ -148,28 +149,28 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(35px);
  }
 
  .sunday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(35px);
  }
 
  .monday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(35px);
  }
 
  .tuesday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(35px);
  }
 
  
