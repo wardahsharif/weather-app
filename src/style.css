@@ -21,7 +21,7 @@
 
  h3 {
      font-weight: normal;
-     font-size: 23px;
+     font-size: 20px;
  }
 
  button {
@@ -59,7 +59,7 @@ border:transparent;
  }
 
  .currently {
-     font-size: 30px;
+     font-size: 20px;
      font-style: oblique;
  }
 
@@ -69,7 +69,7 @@ border:transparent;
  }
 
  .container {
-     max-width: 800px;
+     max-width: 750px;
      margin-top: 100px;
     
      
@@ -81,17 +81,18 @@ border:transparent;
     border: solid rgb(212, 169, 224);
      border-width: 10px;
      background-color: transparent;
-    backdrop-filter: blur(40px); 
+    backdrop-filter: blur(50px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
  .card-2 {
      max-width: 400px;
+     
      display: block;
      margin: 0 auto;
      margin-top: 10px;
     background-color: transparent;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(50px);
     border: solid rgb(212, 169, 224);
     
      
@@ -141,7 +142,7 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(35px);
+        backdrop-filter: blur(50px);
 
  }
 
@@ -149,28 +150,28 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(35px);
+        backdrop-filter: blur(50px);
  }
 
  .sunday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(35px);
+        backdrop-filter: blur(50px);
  }
 
  .monday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(35px);
+        backdrop-filter: blur(50px);
  }
 
  .tuesday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
     background-color: transparent;
-        backdrop-filter: blur(35px);
+        backdrop-filter: blur(50px);
  }
 
  .codedBy {
