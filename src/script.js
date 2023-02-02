@@ -55,6 +55,10 @@ function showTemperature(response) {
    wind.innerHTML = Math.round(response.data.wind.speed);
    let feelsLike = document.querySelector("#feelsLike");
    feelsLike.innerHTML = Math.round(response.data.main.feels_like);
+   let icon = document.querySelector("#icon");
+   icon.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+   icon.setAttribute("alt",response.data.weather[0].description.toUpperCase() )
+   
 }
 
 function cityUrl(event) {
