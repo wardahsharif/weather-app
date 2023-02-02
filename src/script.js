@@ -43,7 +43,12 @@ function showTemperature(response) {
   temperatureElement.innerHTML = `${temperature}℃`;
   let description = document.querySelector(".description");
   description.innerHTML = response.data.weather[0].description.toUpperCase();
-   
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+   let wind = document.querySelector("#wind");
+   wind.innerHTML = Math.round(response.data.wind.speed);
+   let feelsLike = document.querySelector("#feelsLike");
+   feelsLike.innerHTML = Math.round(response.data.main.feels_like);
 }
 
 function cityUrl(event) {
