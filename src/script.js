@@ -122,8 +122,36 @@ fahrenheit.classList.remove("active");
 }
 
 let celsius = null;
+displayForecast();
 
 let celsiusElement = document.getElementById("celsius");
 celsiusElement.addEventListener("click", celsiusTemperature);
 
 
+function displayForecast() {
+ let forecastElement = document.querySelector("#forecast");
+
+
+ forecastHTML = `<div class="row">`;
+ let days = ["fri" ,"sat" , "sun", "mon" , "tue"];
+days.forEach(function(day){
+  forecastHTML = forecastHTML + ` 
+
+ 
+    <div class="col">
+        <div class="card friday">
+      <div class="emoji">🌨️</br> 
+      </div>
+      ${day} </br>
+      3° 1°
+    </div>
+    </div> 
+      `;
+}) 
+ 
+
+      forecastHTML = forecastHTML + `</div>`;
+
+forecastElement.innerHTML = forecastHTML;
+
+}
