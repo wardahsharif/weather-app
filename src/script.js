@@ -24,6 +24,19 @@ let currentDay = currentDays[date.getDay()];
 h3.innerHTML = `${currentDay}  ${currentHour}:${currentMinutes}`;
 
 
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "aa09763d916df0424c840d55bfc2d2c9";
+  let lat = coordinates.lat;
+  let lon = coordinates.lon;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+  axios.get(apiUrl).then(displayForecast);
+}
+
+
+
+
 function showTemperature(response) {
   console.log(response);
   let city = response.data.name;
@@ -51,6 +64,8 @@ function showTemperature(response) {
    icon.setAttribute("alt",response.data.weather[0].description.toUpperCase() )
    
     celsius = response.data.main.temp;
+
+    getForecast(response.data.coord);
    
 }
 
@@ -122,18 +137,19 @@ fahrenheit.classList.remove("active");
 }
 
 let celsius = null;
-displayForecast();
+
+
 
 let celsiusElement = document.getElementById("celsius");
 celsiusElement.addEventListener("click", celsiusTemperature);
 
 
-function displayForecast() {
+function displayForecast(response) {
+console.log(response.data.daily);
  let forecastElement = document.querySelector("#forecast");
 
-
- forecastHTML = `<div class="row">`;
  let days = ["fri" ,"sat" , "sun", "mon" , "tue"];
+ forecastHTML = `<div class="row">`;
 days.forEach(function(day){
   forecastHTML = forecastHTML + ` 
 
