@@ -70,7 +70,7 @@ border:transparent;
  
 
  .container {
-     max-width: 750px;
+     max-width: 800px;
      margin-top: 100px;
     
      
@@ -99,6 +99,12 @@ border:transparent;
      
  }
 
+ .forecast-icon {
+    display: block ;
+    margin: 0 auto ;
+    width: 80px;
+ }
+
  hr {
      max-width: 80%;
 
@@ -115,12 +121,12 @@ border:transparent;
  .weekdays {
      margin-top: 30px;
      margin-bottom: 40px;
+     
    
  }
 
  .emoji {
-     font-size: 40px;
-     
+    font-size: 40px;;
  }
 
  .description {
@@ -142,37 +148,37 @@ border:transparent;
  .friday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
-    background-color: transparent;
-        backdrop-filter: blur(50px);
+     background-color: transparent;
+     backdrop-filter: blur(50px);
 
  }
 
  .saturday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
-    background-color: transparent;
-        backdrop-filter: blur(50px);
+     background-color: transparent;
+     backdrop-filter: blur(50px);
  }
 
  .sunday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
-    background-color: transparent;
-        backdrop-filter: blur(50px);
+     background-color: transparent;
+     backdrop-filter: blur(50px);
  }
 
  .monday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
-    background-color: transparent;
-        backdrop-filter: blur(50px);
+     background-color: transparent;
+     backdrop-filter: blur(50px);
  }
 
  .tuesday {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
-    background-color: transparent;
-        backdrop-filter: blur(50px);
+     background-color: transparent;
+     backdrop-filter: blur(50px);
  }
 
  .codedBy {

@@ -144,26 +144,43 @@ let celsiusElement = document.getElementById("celsius");
 celsiusElement.addEventListener("click", celsiusTemperature);
 
 
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon" ,"Tue" , "Wed" , "Thu", "Fri" , "Sat"];
+  return days[day];
+  
+}
+
 function displayForecast(response) {
-console.log(response.data.daily);
+
+let forecast = response.data.daily;
  let forecastElement = document.querySelector("#forecast");
 
- let days = ["fri" ,"sat" , "sun", "mon" , "tue"];
  forecastHTML = `<div class="row">`;
-days.forEach(function(day){
-  forecastHTML = forecastHTML + ` 
-
- 
-    <div class="col">
+forecast.forEach(function(forecastDay, index){
+  if (index < 5) {
+  forecastHTML = forecastHTML + `
+  <div class="col">
         <div class="card friday">
-      <div class="emoji">🌨️</br> 
-      </div>
-      ${day} </br>
-      3° 1°
+        <img
+       class="forecast-icon"
+        src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+        </br>
+     ${formatDay(forecastDay.dt)} </br>
+      <span class="maxTemp">
+      ${Math.round(forecastDay.temp.max)}℃ </span> 
+      <span class="minTemp">
+       ${Math.round(forecastDay.temp.min)}℃ </span>
     </div>
-    </div> 
-      `;
-}) 
+    </div>`
+  };
+})
+
+    
+    
+
  
 
       forecastHTML = forecastHTML + `</div>`;
