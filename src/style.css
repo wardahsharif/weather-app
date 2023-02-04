@@ -70,7 +70,7 @@ border:transparent;
  
 
  .container {
-     max-width: 800px;
+     max-width: 750px;
      margin-top: 100px;
     
      
@@ -82,7 +82,7 @@ border:transparent;
     border: solid rgb(212, 169, 224);
      border-width: 10px;
      background-color: transparent;
-    backdrop-filter: blur(50px); 
+    backdrop-filter: blur(60px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
@@ -93,7 +93,7 @@ border:transparent;
      margin: 0 auto;
      margin-top: 10px;
     background-color: transparent;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(60px);
     border: solid rgb(212, 169, 224);
     
      
@@ -149,37 +149,10 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
      background-color: transparent;
-     backdrop-filter: blur(50px);
+     backdrop-filter: blur(60px);
 
  }
 
- .saturday {
-     border: solid rgb(212, 169, 224);
-     padding-bottom: 20px;
-     background-color: transparent;
-     backdrop-filter: blur(50px);
- }
-
- .sunday {
-     border: solid rgb(212, 169, 224);
-     padding-bottom: 20px;
-     background-color: transparent;
-     backdrop-filter: blur(50px);
- }
-
- .monday {
-     border: solid rgb(212, 169, 224);
-     padding-bottom: 20px;
-     background-color: transparent;
-     backdrop-filter: blur(50px);
- }
-
- .tuesday {
-     border: solid rgb(212, 169, 224);
-     padding-bottom: 20px;
-     background-color: transparent;
-     backdrop-filter: blur(50px);
- }
 
  .codedBy {
     
@@ -194,7 +167,7 @@ border:transparent;
      float: none;
      margin-bottom: 10px;
 background-color: transparent;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(60px);
     border: transparent;
             
  }
