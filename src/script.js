@@ -171,11 +171,14 @@ forecast.forEach(function(forecastDay, index){
         <img
        class="forecast-icon"
         src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
-        </br>
-    <strong><em> ${formatDay(forecastDay.dt)}</em> </strong></br>
+        
+    <em> ${formatDay(forecastDay.dt)}</em>
+    
       <span class="maxTemp">
+      <i class="fa-solid fa-temperature-high"></i>
       ${Math.round(forecastDay.temp.max)}℃ </span> 
       <span class="minTemp">
+      <i class="fa-solid fa-temperature-low"></i>
        ${Math.round(forecastDay.temp.min)}℃ </span>
     </div>
     </div>`

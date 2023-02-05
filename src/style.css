@@ -82,7 +82,7 @@ border:transparent;
     border: solid rgb(212, 169, 224);
      border-width: 10px;
      background-color: transparent;
-    backdrop-filter: blur(60px); 
+    backdrop-filter: blur(70px); 
     box-shadow: 2px 2px 4px transparent;
  }
 
@@ -93,16 +93,16 @@ border:transparent;
      margin: 0 auto;
      margin-top: 10px;
     background-color: transparent;
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(70px);
     border: solid rgb(212, 169, 224);
     
      
  }
 
  .forecast-icon {
-    display: block ;
-    margin: 0 auto ;
-    width: 80px;
+     display: block;
+     margin: 0 auto;
+     width: 80px;
  }
 
  hr {
@@ -149,7 +149,7 @@ border:transparent;
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
      background-color: transparent;
-     backdrop-filter: blur(60px);
+     backdrop-filter: blur(70px);
 
  }
 
@@ -167,7 +167,7 @@ border:transparent;
      float: none;
      margin-bottom: 10px;
 background-color: transparent;
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(70px);
     border: transparent;
             
  }
