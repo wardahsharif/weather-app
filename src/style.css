@@ -84,6 +84,11 @@ border:transparent;
      background-color: transparent;
     backdrop-filter: blur(70px); 
     box-shadow: 2px 2px 4px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 354px;
  }
 
  .card-2 {
@@ -145,7 +150,7 @@ border:transparent;
      margin-top: 10px;
  }
 
- .friday {
+ .forecast-week {
      border: solid rgb(212, 169, 224);
      padding-bottom: 20px;
      background-color: transparent;

@@ -167,7 +167,7 @@ forecast.forEach(function(forecastDay, index){
   if (index < 5) {
   forecastHTML = forecastHTML + `
   <div class="col">
-        <div class="card friday">
+        <div class="card forecast-week">
         <img
        class="forecast-icon"
         src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
