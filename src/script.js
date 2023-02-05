@@ -44,10 +44,10 @@ function showTemperature(response) {
   cityElement.innerHTML = `${city}`;
 
   let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("h2");
+  let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${temperature}℃`;
 
-  let description = document.querySelector(".description");
+  let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description.toUpperCase();
 
   let humidity = document.querySelector("#humidity");
@@ -69,21 +69,25 @@ function showTemperature(response) {
    
 }
 
-function cityUrl(event) {
-  event.preventDefault();
 
-  let searchInput = document.querySelector("#search-input");
-  let city = document.querySelector("#city");
-  city.innerHTML = `${searchInput.value}`;
-  let units = "metric";
+  function SearchCity (city) {
   let apiKey = "aa09763d916df0424c840d55bfc2d2c9";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
   console.log(apiUrl);
 }
 
+function cityUrl(event) {
+ event.preventDefault();
 
+  let searchInput = document.querySelector("#search-input");
+  let city = document.querySelector("#city");
+  city.innerHTML = `${searchInput.value}`;
+  SearchCity(searchInput.value);
+}
 
+  
+SearchCity("stockholm");
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", cityUrl);
@@ -188,3 +192,4 @@ forecast.forEach(function(forecastDay, index){
 forecastElement.innerHTML = forecastHTML;
 
 }
+
