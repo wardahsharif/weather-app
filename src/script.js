@@ -195,4 +195,3 @@ forecast.forEach(function(forecastDay, index){
 forecastElement.innerHTML = forecastHTML;
 
 }
-
