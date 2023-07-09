@@ -4,7 +4,11 @@
      }
  }
  
- 
+ body {
+    background-image: url(../media/cherryblossom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
  
  
  #myVideo {
@@ -83,7 +87,7 @@ border:transparent;
  }
 
  .card-1 {
-    border: solid rgb(212, 169, 224);
+    border: solid rgb(245, 196, 235);
      border-width: 10px;
      background-color: transparent;
     backdrop-filter: blur(70px); 
@@ -100,7 +104,7 @@ border:transparent;
      margin-top: 10px;
     background-color: transparent;
     backdrop-filter: blur(70px);
-    border: solid rgb(212, 169, 224);
+    border: solid rgb(245, 196, 235); 
    
      
  }
